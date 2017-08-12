@@ -36,6 +36,8 @@ header {
   font-size: 1rem;
 }
 
+
+
 /* Title Styles */
 .titlebox {
   background-image: url("../images/moto.jpeg");
@@ -69,23 +71,30 @@ header {
   padding-top: 0.25rem;
 }
 
+
+
 /* Navigation Styles */
 .navbox {
     background-color: firebrick;
     display: flex;
     justify-content: center;
 }
-nav {
+.screen {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   display: flex;
   justify-content: space-between;
   width: 960px;
 }
+.tablet {
+  display: none;
+}
 nav a {
   color: white;
   text-decoration: none;
 }
+
+
 
 /* Product Grid Styles */
 .productgrid {
@@ -119,6 +128,8 @@ nav a {
   text-align: center;
 }
 
+
+
 /* Location Box Styles */
 .locationbox {
   display: flex;
@@ -138,6 +149,8 @@ nav a {
   padding: 1rem 2rem;
 }
 
+
+
 /* Footer Styles */
 footer {
   height: 5rem;
@@ -146,10 +159,91 @@ footer {
   color: white;
   display: flex;
   justify-content: center;
-  align-items: center;
   padding-top: 5rem;
 }
 .footerbox {
   width: 960px;
   text-align: left;
+}
+
+/* Responsive Design Styles */
+@media only screen and (min-width: 471px) and (max-width: 1024px) {
+  html {
+    font-size: 16px;
+  }
+  .screen {
+    display: none;
+  }
+  .tablet {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  .thermal {
+    display: none;
+  }
+  .image {
+    width: 47%;
+  }
+}
+@media only screen and (max-width: 470px) {
+  .titlecontainer {
+    height: 15rem;
+    display: flex;
+    width: 960px;
+    display: flex;
+    align-items: flex-end;
+  }
+  .title {
+    background-color: red;
+    width: 100%;
+    padding-left: 2rem;
+    margin-top: 0rem;
+    height: 5rem;
+  }
+  .title h2 {
+    font-weight: bold;
+    font-size: 0.77rem;
+    padding-top: 1rem;
+  }
+  .title h1 {
+    font-size: 1rem;
+    font-weight: bold;
+    padding-top: 0.25rem;
+  }
+  .phone {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    display: flex;
+  }
+  .screen {
+    display: none;
+  }
+  .thermal {
+    display: none;
+  }
+  .watch {
+    display: none;
+  }
+  .image {
+    width: 90%;
+  }
+  .imagebox {
+    justify-content: center;
+  }
+  .locationhours {
+    width: 100%;
+    display: block;
+  }
+  .box {
+    width: 90%;
+    margin: 0px auto;
+  }
+  .text {
+    margin-top: 0.5rem;
+  }
+  .footerbox {
+    text-align: center;
+  }
 }
